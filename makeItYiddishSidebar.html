@@ -1,0 +1,26 @@
+<link href="https://ssl.gstatic.com/docs/script/css/add-ons.css"
+     rel="stylesheet"> 
+ 
+<div class="sidebar"> 
+    <div>
+        Make your current selection Yiddish, or translate Yiddish to English.
+    </div><br />
+    <div class="block form-group">
+        <button class="blue" id="makeItYiddishButton">Yiddish</button>
+        <button class="blue" id="makeItEnglishButton">English</button>
+    </div>
+    
+</div>
+ 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+ 
+<script>
+ $(function() {
+   $('#makeItYiddishButton').click(function() {
+       google.script.run.makeItYiddish();
+   });
+   $('#makeItEnglishButton').click(function() {
+       google.script.run.makeItEnglish();
+   });   
+ });
+</script>
